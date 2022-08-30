@@ -246,7 +246,7 @@ div .footer__links {
 /* Мобильные устройства */
 @media (max-width: 720px) {
    header {
-      padding: 200px 10px;
+      padding: 10px;
    }
 
    .header__logo {
