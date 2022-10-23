@@ -2,6 +2,7 @@ body {
    font-family: 'Raleway', sans-serif;
    color: #213053;
    margin: 0;
+   /*убран наступ 8px по умолчанию*/
 }
 
 header {
@@ -58,6 +59,15 @@ button:hover {
    background: url("../img/back.png") no-repeat;
    background-position: center;
    background-size: cover;
+   position: relative;
+}
+
+.orb-canvas {
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 100%;
+
 }
 
 .about__info {
