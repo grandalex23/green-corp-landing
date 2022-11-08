@@ -10,11 +10,22 @@ header {
    justify-content: space-between;
    align-items: center;
    padding: 20px;
-   position: sticky;
+   position: fixed;
+   background: none;
+   left: 0;
+   right: 0;
    top: 0;
-   background-color: #fff;
+   background-color: rgba(255, 255, 255, 0);
+   transition: box-shadow, background-color .25s ease;
+   /* тень еще не задана */
    z-index: 1;
 
+}
+
+.header__scrolled {
+   background-color: rgba(255, 255, 255, 1);
+   box-shadow: 0 12px 34px -11px rgba(65 62 101 0.1);
+   /*в оригинале rgb(65 62 101 / 10%).*/
 }
 
 .header__logo {
@@ -23,7 +34,7 @@ header {
 
 a {
    text-decoration: none;
-   color: #213053;
+   color: rgb(33, 48, 83);
 }
 
 header a {
@@ -55,7 +66,7 @@ button:hover {
    align-items: center;
    justify-content: space-around;
    padding-bottom: 115px;
-   padding-top: 115px;
+   padding-top: 200px;
    background: url("../img/back.png") no-repeat;
    background-position: center;
    background-size: cover;
